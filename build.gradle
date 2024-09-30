@@ -1,30 +1,36 @@
 buildscript {
     repositories {
-        jcenter()
+        google()
+        mavenCentral()
         maven { url "https://jitpack.io"}
         maven { url "https://plugins.gradle.org/m2/"}
 
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:2.2.0"
-        classpath "com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:c09975d"
-        classpath "com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:c09975d"
-        classpath "org.jsoup:jsoup:1.9.1"
+        classpath 'com.android.tools.build:gradle:8.5.1'
+        classpath "com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:6c8b1e06d1"
+        classpath "com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:6c8b1e06d1"
+        classpath 'org.jsoup:jsoup:1.13.1'
     }
 }
 
-apply plugin: "com.android.application"
+plugins {
+    id 'com.android.application' version '8.5.1' apply false
+}
+
+apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "25.0.1"
+    buildToolsVersion "34.0.0"
+    namespace = "com.anysoftkeyboard.languagepack.neo"
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.neo"
-        minSdkVersion 7
-        targetSdkVersion 23
-        versionCode 8
-        versionName "2.0"
+        applicationId namespace
+        minSdkVersion 15
+        targetSdkVersion 33
+        compileSdk 34
+        versionCode 9
+        versionName "2.1"
     }
 
     signingConfigs {
@@ -47,19 +53,6 @@ android {
     }
 }
 
-//task parseDictionaryFile(type: com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask) {
-//    inputFiles new File(project.getProjectDir(), "dictionary/igerman98.txt")
-//    outputWordsListFile new File(project.getProjectDir(), "dictionary/igerman98.xml")
-//    wordCharacters 'ABCDEFGHIJKLMNOPQRSTUVWXYZÜÖÄabcdefghijklmnopqrstuvwxyzüöäß.-'.toCharArray()
-//    additionalInnerCharacters "".toCharArray()
-//    locale Locale.US
-//}
-
-task makeDictionary(type: com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask) {
-    inputWordsListFile new File(project.getProjectDir(), "dictionary/igerman98.xml")
-//     dependsOn parseDictionaryFile
-}
-
 afterEvaluate { proj ->
     proj.tasks.all { task ->
         if (task.name.startsWith('generate') && task.name.endsWith('BuildConfig')) {
@@ -70,9 +63,15 @@ afterEvaluate { proj ->
 
 dependencies {
     repositories {
-        jcenter()
+        mavenCentral()
         maven { url "https://jitpack.io" }
     }
-    compile 'com.github.AnySoftKeyboard:AnySoftKeyboard-API:1.3.5'
+    implementation 'com.github.AnySoftKeyboard:AnySoftKeyboard-API:1.11.1'
+}
+
+repositories {
+    google()
+    mavenCentral()
+    maven { url "https://jitpack.io" }
 }
 
