@@ -51,7 +51,7 @@
     <Key android:codes="109" android:keyLabel="m" android:popupCharacters="%μ⇔"/>
     <Key android:codes="106" android:keyLabel="j" android:popupCharacters=";θΘ"/>
     <Key android:codes="121" android:keyLabel="y" android:popupCharacters="\@υ∇"/>
-    <Key android:codes="121" android:keyLabel="ß" ask:shiftedCodes="7838" android:popupCharacters="ſς∘"/>
+    <Key android:codes="223" android:keyLabel="ß" ask:shiftedCodes="7838" android:popupCharacters="ſς∘"/>
 </Row>
 <Row>
     <Key android:codes="-1" android:isModifier="true" android:isSticky="true" android:keyEdgeFlags="left" android:keyWidth="14%p"/>
