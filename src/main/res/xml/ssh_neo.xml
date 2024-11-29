@@ -37,7 +37,7 @@
     <Key android:codes="117" android:keyLabel="u" android:popupCharacters="\\⊂"/>
     <Key android:codes="105" android:keyLabel="i" android:popupCharacters="/ι∫"/>
     <Key android:codes="97" android:keyLabel="a" android:popupCharacters="{α∀"/>
-    <Key android:codes="101" android:keyLabel="e" android:popupCharacters="}ε∃"/>
+    <Key android:codes="101" android:keyLabel="e" android:popupCharacters="€}ε∃"/>
     <Key android:codes="111" android:keyLabel="o" android:popupCharacters="*ο∈"/>
     <Key android:codes="115" android:keyLabel="s" android:popupCharacters="\?¿σΣ"/>
     <Key android:codes="110" android:keyLabel="n" android:popupCharacters="(4νℕ"/>
