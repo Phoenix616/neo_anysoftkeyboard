@@ -45,11 +45,11 @@
     <Key android:codes="223" android:keyLabel="ß" ask:shiftedCodes="7838" android:popupCharacters="ſς∘"/>
 </Row>
 <Row>
-    <Key android:codes="117" android:keyLabel="u" android:keyEdgeFlags="left" android:popupCharacters="\\⊂×"/>
-    <Key android:codes="105" android:keyLabel="i" android:popupCharacters="/ι∫"/>
-    <Key android:codes="97" android:keyLabel="a" android:popupCharacters="{α∀"/>
-    <Key android:codes="101" android:keyLabel="e" android:popupCharacters="€}ε∃"/>
-    <Key android:codes="111" android:keyLabel="o" android:popupCharacters="*ο∈"/>
+    <Key android:codes="117" android:keyLabel="u" android:keyEdgeFlags="left" android:popupCharacters="üúùû\\⊂×"/>
+    <Key android:codes="105" android:keyLabel="i" android:popupCharacters="íìî/ι∫"/>
+    <Key android:codes="97" android:keyLabel="a" android:popupCharacters="äáàâ{α∀"/>
+    <Key android:codes="101" android:keyLabel="e" android:popupCharacters="€éèê}ε∃"/>
+    <Key android:codes="111" android:keyLabel="o" android:popupCharacters="öóòô*ο∈"/>
     <Key android:codes="115" android:keyLabel="s" android:popupCharacters="\?¿σ"/>
     <Key android:codes="110" android:keyLabel="n" android:popupCharacters="(νℕ"/>
     <Key android:codes="114" android:keyLabel="r" android:popupCharacters=")ρℝ"/>
