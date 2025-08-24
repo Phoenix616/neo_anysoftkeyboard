@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.anysoftkeyboard.languagepack.neo"
-      android:versionCode="12"
-      android:versionName="2.1.3">
+      package="com.anysoftkeyboard.languagepack.neo">
 
 	<supports-screens
           android:largeScreens="true" 
